@@ -1,0 +1,123 @@
+#contact{
+	
+display: block;
+background-image: url("Coffee-beans-with-green-leaf.jpg");
+
+height:1000px;
+}
+
+header{
+	position: fixed;
+height: 57px;
+   
+}
+
+ul{
+	
+	position: fixed;
+height: 20px;
+padding-left: 200px;
+}
+
+li{
+
+	display: inline-block;
+	border: 0px solid #000000;
+	padding: 5px;
+    margin: auto;
+    text-align: center;
+
+}
+
+contact{
+					background-image: url("Coffee-beans-with-green-leaf.jpg");
+					height:1000px;
+				}
+				#box-wrapper{ width: 100%; height: 200px;}
+				.box-block{ width: 100%; height: 200px; float: left; display: block; overflow: hidden; position: relative; margin: 0 4xp 0 0; background: white; border: 1px solid #666}
+
+				#block1{width: 100%; height: 200px; position: absolute; display: block;
+					background:url("gray_macro_coffee_grain_black_leaves_leaflets_for_hd-wallpaper-239479.jpg") no-repeat;
+					background-size: 100%;
+					margin: auto;
+					font-size: 50px;
+					text-align: center;
+					color: white;
+
+					-webkit-transition: top .3s ease-in-out;}
+
+				.box-block:hover #block1  {top: -150px;}
+
+				.content{padding: 70px 15px o 15px; color: #777}
+
+				#tweet {
+    text-align: center;
+    padding: 5%;
+    display: inline-block;
+	font-size: 30px;
+	}
+    footer{
+    	background-color: black;
+    	color: grey;
+    	text-align: center;
+    }
+
+#social{
+	background-image: url("Screen Shot 2016-01-13 at 20.56.09.png");
+	color: white;
+}
+#social a {
+	color: white;
+}
+blockquote h1{
+	text-align: center;
+	background-color: grey;
+	color: black;
+}
+blockquote{
+	background-color: black;
+	color: grey;
+}
+blockquote p{
+	padding: 5px;
+}
+
+.view img{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+
+	transition: filter 600ms ease;
+	-webkit-transition: -webkit-filter 600ms ease;
+}
+
+.imageContainer img:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+.imageContainer {
+    width: 360px;
+    height: 179px;
+    background-image: url("stock-photo-black-leaf-tea-versus-coffee-beans-in-yin-yang-shaped-plate-isolated-on-white-76772767.jpg");
+    padding-bottom: 138px;
+     filter: blur(20px) grayscale(20%);
+}
+
+.imageContainer:hover {
+-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:50%;
+opacity: 0.6;
+-webkit-transform: rotate(720deg);
+transform: rotate(720deg);
+}
+.imageContainer {
+opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+.imageContainer h2 {
+	color: brown;
+}
+.imageContainer p {
+	color: green;
+}
