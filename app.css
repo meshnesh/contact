@@ -129,7 +129,6 @@ form .field:hover label {
 }
 
 form input[type="submit"] {
-    top: 20px;
     background: #FD9638;
     color: white;
     -webkit-appearance: none;
