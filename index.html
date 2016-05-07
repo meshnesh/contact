@@ -23,19 +23,19 @@
 
         <form>
             <div class="field name-box">
-                <input type="text" id="name" placeholder="Who Are You?" />
+                <input type="text" id="nameInput" placeholder="Who Are You?" />
                 <label for="name">Name</label>
                 <span class="ss-icon">check</span>
             </div>
 
             <div class="field email-box">
-                <input type="text" id="email" placeholder="name@email.com" />
+                <input type="text" id="emailInput" placeholder="name@email.com" />
                 <label for="email">Email</label>
                 <span class="ss-icon">check</span>
             </div>
 
             <div class="field msg-box">
-                <textarea id="msg" rows="4" placeholder="Your message goes here..." /></textarea>
+                <textarea id="messageInput" rows="4" placeholder="Your message goes here..." /></textarea>
                 <label for="msg">Msg</label>
                 <span class="ss-icon">check</span>
             </div>
@@ -49,6 +49,15 @@
 
     <script type="text/javascript">
         var myDataRef = new Firebase('https://tunehala.firebaseio.com/');
+        $('#messageInput').keypress(function (e) {
+            if (e.keyCode == 13) {
+                var name = $('#nameInput').val();
+                var email = $('#emailInput').val();
+                var text = $('#messageInput').val();
+                myDataRef.set('User ' + name + 'Email' + email + 'says ' + text);
+                $('#messageInput').val('');
+            }
+        });
     </script>
     <script src="app.js"></script>
     <script src="path/to/angular/angular.js"></script>
