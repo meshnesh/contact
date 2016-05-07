@@ -54,7 +54,11 @@
                 var name = $('#nameInput').val();
                 var email = $('#emailInput').val();
                 var text = $('#messageInput').val();
-                myDataRef.set('User ' + name + 'Email' + email + 'says ' + text);
+                myDataRef.set({
+                    name: name
+                    , email: email
+                    , text: text
+                });
                 $('#messageInput').val('');
             }
         });
