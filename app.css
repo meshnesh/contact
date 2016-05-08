@@ -101,7 +101,7 @@ form .field textarea.focused {
     outline: none;
 }
 
-form .field input[type="text"]:focus#msg,
+\\ form .field input[type="text"]:focus#msg,
 form .field input[type="text"].focused#msg,
 form .field textarea:focus#msg,
 form .field textarea.focused#msg {
